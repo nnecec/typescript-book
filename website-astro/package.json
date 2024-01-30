@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "@astrojs/starlight": "^0.16.0",
+    "@astrojs/starlight": "^0.17.1",
     "@astrojs/starlight-tailwind": "^2.0.1",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.2.1",
+    "astro": "^4.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^15.0.1",
