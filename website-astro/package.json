@@ -12,11 +12,11 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/starlight": "^0.17.1",
+    "@astrojs/check": "^0.5.5",
+    "@astrojs/starlight": "^0.20.1",
     "@astrojs/starlight-tailwind": "^2.0.1",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.2.6",
+    "astro": "^4.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^15.0.1",
@@ -27,8 +27,8 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@nnecec/eslint-config": "^0.8.10",
-    "@nnecec/prettier-config": "^0.4.0",
-    "tsx": "^4.7.0"
+    "@nnecec/eslint-config": "^0.9.1",
+    "@nnecec/prettier-config": "^0.4.1",
+    "tsx": "^4.7.1"
   }
 }
