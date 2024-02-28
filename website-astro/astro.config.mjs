@@ -32,13 +32,6 @@ export default defineConfig({
           },
           tag: 'script',
         },
-        process.env.NODE_ENV === 'production' && {
-          attrs: {
-            async: true,
-            src: `https://www.clarity.ms/tag/${process.env.CLARITY_ID}`,
-          },
-          tag: 'script',
-        },
         {
           attrs: {
             href: '/apple-touch-icon.png',
