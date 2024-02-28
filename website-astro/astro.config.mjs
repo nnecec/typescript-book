@@ -25,9 +25,8 @@ export default defineConfig({
         },
         {
           attrs: {
-            'data-website-id': process.env.UMAMI_ID,
             defer: true,
-            src: 'https://us.umami.is/script.js',
+            src: `https://www.clarity.ms/tag/${process.env.CLARITY_ID}`,
           },
           tag: 'script',
         },
