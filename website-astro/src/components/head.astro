@@ -1,0 +1,18 @@
+---
+import type { Props } from '@astrojs/starlight/props'
+import Default from '@astrojs/starlight/components/Head.astro'
+
+const id = import.meta.env.PUBLIC_GA_ID
+---
+
+<script type="text/partytown" async src=`https://www.googletagmanager.com/gtag/js?id=${id}`
+></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', id)
+</script>
+<Default {...Astro.props}><slot /></Default>

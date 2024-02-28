@@ -2,15 +2,24 @@ import { defineConfig } from 'astro/config'
 
 import starlight from '@astrojs/starlight'
 import tailwind from '@astrojs/tailwind'
+import partytown from '@astrojs/partytown'
 
 /** @type {import('astro').AstroUserConfig} */
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
     /** @type {import('@astro/starlight').StarlightUserConfigWithPlugins} */
     starlight({
       customCss: ['./src/styles/global.css'],
+      components: {
+        Head: './src/components/head.astro',
+      },
       head: [
         process.env.NODE_ENV === 'production' && {
           attrs: {
@@ -23,9 +32,9 @@ export default defineConfig({
           },
           tag: 'script',
         },
-        {
+        process.env.NODE_ENV === 'production' && {
           attrs: {
-            defer: true,
+            async: true,
             src: `https://www.clarity.ms/tag/${process.env.CLARITY_ID}`,
           },
           tag: 'script',
