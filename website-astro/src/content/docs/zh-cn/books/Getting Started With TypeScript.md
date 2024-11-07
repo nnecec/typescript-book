@@ -75,7 +75,7 @@ tsc src/*.ts // 将 'src' 文件夹下任意的 .ts 文件编译成 JavaScript
 tsc app.ts util.ts --outfile index.js // 将 2 个 TypeScript 文件 (app.ts 和 util.ts) 编译成 1 个 JavaScript 文件 (index.js)
 ```
 
-### TypeScript 的配置文件 tsconfig.json
+### TypeScript 的配置文件
 
 tsconfig.json 文件用于配置 TypeScript 编译器 (tsc)。通常，它与文件一起添加到项目的根目录中package.json。
 

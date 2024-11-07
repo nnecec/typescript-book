@@ -11,5 +11,5 @@ Simone Poggiali 是一位经验丰富的高级前端开发人员，自 90 年代
 
 * 领英: <https://www.linkedin.com/in/simone-poggiali>
 * GitHub: <https://github.com/gibbok>
-* 推特: <https://twitter.com/gibbok_coding>
+* X.com: <https://x.com/gibbok_coding>
 * 电子邮箱: gibbok.coding📧gmail.com
